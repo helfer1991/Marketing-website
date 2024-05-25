@@ -2,6 +2,8 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import { Header } from './ui/header/header';
 import { Statistics } from './ui/statistics/statistics';
+import { Loading } from './ui/statistics/loading';
+import { Suspense } from 'react';
 
 export default async function Home() {
 	return (
@@ -16,7 +18,9 @@ export default async function Home() {
 					src='/images/white-blocks.png'
 					width={100}
 				/>
-				<Statistics />
+				<Suspense fallback={<Loading />}>
+					<Statistics />
+				</Suspense>
 			</div>
 		</main>
 	);
