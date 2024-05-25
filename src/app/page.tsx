@@ -7,15 +7,17 @@ export default async function Home() {
 	return (
 		<main className={styles.main}>
 			<Header />
-			<Image
-				alt='statistics page image'
-				className={styles.image}
-				height={100}
-				layout='responsive'
-				src='/images/white-blocks.png'
-				width={100}
-			/>
-			<Statistics />
+			<div className={styles.desktopContainer}>
+				<Image
+					alt='statistics page image'
+					className={styles.image}
+					height={100}
+					layout='responsive'
+					src='/images/white-blocks.png'
+					width={100}
+				/>
+				<Statistics />
+			</div>
 		</main>
 	);
 }
