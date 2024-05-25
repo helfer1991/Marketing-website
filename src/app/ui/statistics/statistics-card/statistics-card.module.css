@@ -1,0 +1,23 @@
+.card {
+	border: 2px solid #e5e5e5;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.statistic {
+	color: #4338ca;
+	font-size: 36px;
+	line-height: 40px;
+	margin: 24px 0 16px;
+
+	@media (min-width: 768px) {
+		font-size: 48px;
+		line-height: 48px;
+	}
+}
+
+.metric {
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0 0 24px;
+}

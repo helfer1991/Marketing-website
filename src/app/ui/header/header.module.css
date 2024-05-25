@@ -1,0 +1,35 @@
+.container {
+	text-align: center;
+	margin-bottom: 48px;
+
+	@media (min-width: 768px) {
+		margin-bottom: 64px;
+	}
+}
+
+.header {
+	color: #4338ca;
+	filter: drop-shadow(2px 2px 16px);
+	font-weight: 600;
+	font-size: 16px;
+	margin: 0 0 12px;
+}
+
+.subtitle {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 36px;
+	margin: 0 0 20px;
+
+	@media (min-width: 768px) {
+		font-size: 48px;
+		line-height: 48px;
+	}
+}
+
+.description {
+	color: #525252;
+	font-size: 20px;
+	line-height: 28px;
+	margin: 0;
+}
